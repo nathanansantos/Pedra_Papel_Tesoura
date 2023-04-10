@@ -1,0 +1,93 @@
+<!--O programa simula uma folha de pagamento de uma empresa,
+onde será feito diferentes tipos de descontos para cada funcionário.-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body style="background-image:url(nuvem.png);">
+
+    <section>
+        <!--Container onde contém as informações a serem mostradas-->
+        <div class="container" style="background-color: rgb(255, 255, 255);
+                                      height: 950px;
+                                      margin-top: 20px;
+                                      width: 600px;
+                                      border-radius: 20px;">
+            <center>
+                <br>
+                <h1 style="font-family: Franklin Gothic Heavy;color: rgb(105, 191, 241);">Calculadora - IMC </h1>
+            </center>
+            <hr>
+
+            <!--Uma div onde será mostrada cada imagem respectiva ao peso-->
+
+            <div class="row">
+                <div class="col-2"><img src="abaixodopeso.png" alt="abaixo do peso" width="100" class="responsive"
+                        style="margin-left: 10px ; margin-top: 10px;">
+                </div>
+                <div class="col-2"><img src="pesoideal.png" alt="peso ideal" width="109" class="responsive"
+                        style="margin-left: 50px ;">
+                </div>
+                <div class="col-2"><img src="acimadopeso.png" alt="acima do peso" width="104" class="responsive"
+                        style="margin-left: 95px ;">
+                </div>
+                <div class="col-2"><img src="obeso.png" alt="obesidade" width="113" class="responsive"
+                        style="margin-left: 123px ; padding-top: 5px;">
+                </div </div>
+
+                <center>
+
+
+                    <!--Div onde estará os campos para o usuário digitar-->
+                    <div class="row" style="margin-left: 150px; margin-top: 20px;">
+
+                        <label>Peso</label>
+                        <input style="width: 100px; margin-right: 5px ; margin-left: 5px ;" type="number"
+                            class="form-control" id='peso'>
+
+                        <label>Altura</label>
+                        <input style="width: 100px ; margin-left: 5px ;" type="number" class="form-control" id='altura'>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <br>
+                        <!--Botão para calcular o IMC-->
+                        <div class="col" style="margin-left: 140px;">
+                            <button type="button"
+                                style="height: 37px; background-color:rgb(105, 191, 241);color: white; "
+                                id='calcular'>Calcular</button>
+                </center>
+            </div>
+            <hr>
+            <!--Espaço onde será mostrado o resultado-->
+            <div class="col">
+                <h4 style="background-color: rgb(105, 191, 241); display: flex; 
+                    justify-content: center;align-items: center; 
+                    border-radius: 10px; color: white;" id='resultado'></h4>
+            </div>
+            <br><br>
+            <!-- Espaço onde será mostrado a imagem relacionada
+            ao peso -->
+            <div class="col" style="display: flex; justify-content: center;
+                align-items: center; margin-left: 35px;" id='imagem'> </div>
+        </div>
+
+        </center>
+
+        </div>
+        <br>
+    </section>
+    <!--Linha onde chama o arquivo em JavaScript-->
+    <script src="imc.js"></script>
+
+</body>
+
+</html>
