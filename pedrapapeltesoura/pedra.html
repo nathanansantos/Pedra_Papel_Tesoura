@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<pt-br></pt-br>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Pedra, papel e tesoura</title>
+</head>
+
+<body style="background-image: url(fundo.jpg);">
+    <section>
+        <div class="container">
+            <div class="row">
+                <center>
+                    <!--Título-->
+                    <div class="col text-center">
+                        <h1 style="background-color: khaki;
+                                   border-radius: 10px;
+                                   margin-top: 10px;
+                                   width: 540px;
+                                   margin-left: 260px;
+                                   padding: 10px; font-family: Impact; border-style: solid;">Pedra, papel e tesoura
+                        </h1>
+                    </div>
+                </center>
+            </div>
+            <br>
+            <!--Imagens de pedra, papel e tesoura-->
+            <div class="row" style="margin-left: 70px;">
+                <style>
+                    .btn:hover {
+                        background-color: white;
+                    }
+                </style>
+                <div class="col">
+                    <button type="button" class="btn btn-dark" id="pedra"><img src="pedra.jpg" alt="pedra">
+                    </button>
+                    <br>
+                </div>
+
+                <div class="col">
+                    <button type="button" class="btn btn-dark" id="papel"><img src="papel.jpg" alt="papel">
+                    </button>
+                </div>
+
+                <div class="col">
+                    <button type="button" class="btn btn-dark" id="tesoura"> <img src="tesoura.jpg" alt="tesoura">
+                    </button>
+                </div>
+            </div>
+            <!--Local onde é mostrado a escolha do usuário, a do computador e o resultado do jogo-->
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col text-center" style="margin-top: 100px ;">
+                            <h3 style="background-color: khaki; border-style: solid; font-family: Comic Sans MS;">Sua
+                                escolha</h3>
+                        </div>
+
+                        <div class="col text-center" style="margin-top: 100px ;">
+                            <h3 style="background-color: khaki; border-style: solid; font-family: Comic Sans MS; ">
+                                Escolha do computador</h3>
+                        </div>
+
+                        <div class="col text-center" style="margin-top: 100px ;">
+                            <h3 style="background-color: khaki; border-style: solid; font-family: Comic Sans MS; ">
+                                Resultado</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="row" style="margin-left: 50px;">
+                <div class="col" style="margin-left: 27px;" id="jogador"> </div>
+                <div class="col" style="margin-left: 27px;" id="adversario"> </div>
+                <div class="col" style="margin-left: 36px;" id="resultado"> </div>
+            </div>
+            <br><br>
+            <!--Placar-->
+            <div class="container" style="background-color: khaki; width: 200px; 
+                                   border-style: solid; margin-bottom: 10px;">
+                <div class="row">
+                    <div class="col text-center">
+                        <u>
+                            <h1 style="font-family: Impact;">Placar</h1>
+                        </u>
+                        <br>
+                        <h2 style="font-family: Comic Sans MS;">Vitórias: <div id="vitorias">0</div>
+                        </h2>
+                        <h2 style="font-family: Comic Sans MS;">Empates: <div id="empates">0</div>
+                        </h2>
+                        <h2 style="font-family: Comic Sans MS;">Derrotas: <div id="derrotas">0</div>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+    <script src="pedra.js"></script>
+</body>
+
+</html>
